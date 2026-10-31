@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome List" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Data-Warehouse-Architecture/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Data-Warehouse-Architecture?style=social&color=white" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Data-Warehouse-Architecture/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Data-Warehouse-Architecture?style=social&color=white" alt="GitHub_Stars" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cloud-Data-Warehouse-Architecture/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -67,7 +67,7 @@ The following table compares leading SaaS and fully managed cloud data warehouse
 
 Curated open-source analytical databases, Massively Parallel Processing (MPP) engines, lakehouse table formats, and vectorized query runtimes. 🛠️
 
-Repositories are sorted in descending order by **GitHub Star Count**. Every badge links directly to that repository's GitHub Stargazers page. ⭐
+Repositories are sorted in descending order by **GitHub Stars_Count**. Every badge links directly to that repository's GitHub Stargazers page. ⭐
 
 | 📦 Repository | ⭐ Stargazers Badge | 📄 License | 💻 Language / Stack | ⚙️ Core Architectural Focus | 🎯 Best For |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -123,7 +123,7 @@ We welcome community contributions! 🌟 To add a new platform or update informa
 
 1. 🍴 Fork this repository.
 2. 📝 Update `README.md` with factual architecture descriptions, transparent pricing benchmarks, or open-source repositories.
-3. 🏷️ For open-source tools, include the GitHub stars badge formatted as:
+3. 🏷️ For open-source tools, include the GitHub_Stars_Badge formatted as:
    `[![Stars](https://img.shields.io/github/stars/{owner}/{repo}?style=social&color=white)](https://github.com/{owner}/{repo}/stargazers)`
 4. 🔢 Ensure entries are placed in the appropriate sorted table.
 5. 🚀 Submit a descriptive Pull Request (PR).
