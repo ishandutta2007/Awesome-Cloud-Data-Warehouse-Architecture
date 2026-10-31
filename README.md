@@ -147,3 +147,5 @@ Thank you so much for exploring and using this repository! 🙌 If you found thi
 
 - ⚖️ Distributed under the [MIT License](LICENSE).
 - 📌 **Disclaimer**: Company valuations, market capitalization figures, and list pricing tiers are collected from public filings, vendor pricing pages, and verified financial reporting as of October 2026. Consult vendor documentation for real-time workload-specific quote modeling.
+# Awesome-Cloud-Data-Warehouse-Architecture
+
