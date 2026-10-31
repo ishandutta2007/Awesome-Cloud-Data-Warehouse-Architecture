@@ -67,7 +67,7 @@ The following table compares leading SaaS and fully managed cloud data warehouse
 
 Curated open-source analytical databases, Massively Parallel Processing (MPP) engines, lakehouse table formats, and vectorized query runtimes. 🛠️
 
-Repositories are sorted in descending order by **GitHub Stars_Count**. Every badge links directly to that repository's GitHub Stargazers page. ⭐
+Repositories are sorted in descending order by **GitHub_Stars_Count**. Every badge links directly to that repository's GitHub Stargazers page. ⭐
 
 | 📦 Repository | ⭐ Stargazers Badge | 📄 License | 💻 Language / Stack | ⚙️ Core Architectural Focus | 🎯 Best For |
 | :--- | :--- | :--- | :--- | :--- | :--- |
