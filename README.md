@@ -1,52 +1,54 @@
-# Awesome-Cloud-Data-Warehouse-Architecture
+# Awesome-Cloud-Data-Warehouse-Architecture 🚀
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Data-Warehouse-Architecture?style=social&color=white)](https://github.com/ishandutta2007/Awesome-Cloud-Data-Warehouse-Architecture/stargazers)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Cloud-Data-Warehouse-Architecture/pulls)
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Cloud Data Warehouse Architecture Banner" width="100%" />
+</p>
 
-> A curated list of **Cloud Data Warehouse (CDW)** architectures, analytical databases, Massively Parallel Processing (MPP) engines, and open Lakehouse query infrastructures.
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome List" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Data-Warehouse-Architecture/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Data-Warehouse-Architecture?style=social&color=white" alt="GitHub stars" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Data-Warehouse-Architecture/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> 📚 A curated list of modern **Cloud Data Warehouse (CDW)** architectures, analytical databases, Massively Parallel Processing (MPP) engines, and open Lakehouse query infrastructures.
 
 **Top Cloud Data Warehouse Architecture (Open-Source & Managed) 🌟 Star if you like it! 🌟**
 
-*Focused on Separation of Storage and Compute, MPP Engines, Lakehouse Integration, Vectorized Execution & Self-Hosted Analytical Databases.*
+*Focused on Separation of Storage and Compute, MPP Engines, Lakehouse Integration, Vectorized Execution & Self-Hosted Analytical Databases.* ⚡
 
-**Last updated: October 2026**
-
----
-
-## Overview
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for modern **Cloud Data Warehouse Architecture**. These tools enable organizations to store, transform, and analyze petabyte-scale datasets with high concurrency and sub-second latency—ranging from fully managed serverless platforms with elastic scaling and workload isolation to open-source distributed analytical databases that provide full control over infrastructure and cost models.
-
-Whether you are evaluating hyperscaler data warehouses (Amazon Redshift, Google BigQuery, Snowflake, Databricks SQL) or deploying self-hosted real-time OLAP engines (ClickHouse, StarRocks, Apache Doris, Apache Pinot, DuckDB), this guide offers a transparent, structured breakdown of architecture, commercial market dynamics, pricing tiers, and open-source ecosystems.
+**Last updated: October 2026** 📅
 
 ---
 
-## Table of Contents
+## 📖 Table of Contents
 
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS & Hosted CDW Platforms](#saas--hosted-cdw-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [Key Architectural Trade-offs](#key-architectural-trade-offs)
-- [How to Contribute](#how-to-contribute)
-- [License & Disclaimer](#license--disclaimer)
-
----
-
-## Sector Overview & Market Dynamics
-
-The global Cloud Data Warehouse (CDW) and modern lakehouse analytical market is estimated at **$14.9 billion to $16.5 billion in 2026**, expanding rapidly at a Compound Annual Growth Rate (CAGR) of **~21%–25%** driven by generative AI workloads, real-time analytics, and enterprise data migration away from legacy on-premises appliances. 
-
-The sector is **moderately fragmented**: while hyperscale cloud providers (AWS, Microsoft Azure, Google Cloud) and independent industry titans (Snowflake, Databricks) capture significant revenue share, the space is heavily fractured rather than a pure "winner-take-all" market. Rapid emergence of open table formats (Apache Iceberg, Delta Lake), federated query layers (Trino, Starburst), embedded analytics (DuckDB), and high-throughput real-time OLAP engines (ClickHouse, StarRocks, Apache Doris) allows specialized vendors and open-source architectures to capture substantial market niches across hybrid, multi-cloud, and real-time operational workloads.
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS & Hosted CDW Platforms](#-saas--hosted-cdw-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [⚖️ Key Architectural Trade-offs](#️-key-architectural-trade-offs)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [📊 Star History](#-star-history)
+- [📜 License & Disclaimer](#-license--disclaimer)
 
 ---
 
-## SaaS & Hosted CDW Platforms
+## 🌐 Sector Overview & Market Dynamics
 
-The following table compares leading SaaS and fully managed cloud data warehouse platforms. Entries are sorted in descending order by **Company Size (Revenue / Market Capitalization / Valuation)**.
+The global Cloud Data Warehouse (CDW) and modern lakehouse analytical market is estimated at **$14.9 billion to $16.5 billion in 2026**, expanding rapidly at a Compound Annual Growth Rate (CAGR) of **~21%–25%** driven by generative AI workloads, real-time analytics, and enterprise data migration away from legacy on-premises appliances. 📈
 
-| Company / Product | Company Size (Market Cap / Valuation / ARR) | Architecture & Capabilities | Pricing (Starting Tier) | Free Tier / Trial Limits | Best For |
+The sector is **moderately fragmented**: while hyperscale cloud providers (AWS, Microsoft Azure, Google Cloud) and independent industry titans (Snowflake, Databricks) command substantial market revenue, the landscape is heavily fractured rather than a "winner-take-all" domain. The rapid adoption of open table formats (Apache Iceberg, Delta Lake), federated query abstractions (Trino, Starburst), embedded in-process analytics (DuckDB), and high-throughput real-time OLAP engines (ClickHouse, StarRocks, Apache Doris) empowers specialized platforms to capture significant niches across hybrid-cloud, edge, and operational analytical workloads. 🧩
+
+---
+
+## 🏢 SaaS & Hosted CDW Platforms
+
+The following table compares leading SaaS and fully managed cloud data warehouse platforms. Entries are sorted in descending order by **Company Size (Revenue / Market Capitalization / Valuation)**. 📊
+
+| 🏢 Platform | 💰 Company Size (Market Cap / Valuation / ARR) | 🏗️ Architecture & Capabilities | 💵 Pricing (Starting Tier) | 🎁 Free Tier / Trial Limits | 🎯 Best For |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **[Google BigQuery](https://cloud.google.com/bigquery)** | **~$2.1T+** (Alphabet Market Cap) | Fully serverless, columnar storage with Capacitor engine; execution over petabit Jupiter network; separation of compute and storage. | **$6.25 / TB** scanned (On-Demand) or editions starting from **$0.04 / slot-hour** (Standard Edition); storage from **$0.02 / GB/mo** | **Always Free Tier:** 1 TB queries/month scanned and 10 GB storage free every month forever. New users also receive a $300 90-day credit trial. | Spiky or unpredictable workloads needing zero operational overhead and instant serverless scaling. |
 | **[Azure Synapse Analytics](https://azure.microsoft.com/en-us/products/synapse-analytics)** | **~$3.0T+** (Microsoft Market Cap) | Unified analytics workspace combining Dedicated SQL pools (MPP), Serverless SQL pools (lake querying), and Spark pools over ADLS Gen2. | **$5.00 / TB** processed (Serverless SQL); Dedicated SQL pools start at **$1.20 / hour** (`DW100c` tier); storage from **$0.023 / GB/mo** | **30-Day Free Trial:** $200 free credits valid for 30 days via Azure Free Account (no permanent free tier for Synapse SQL pools). | Microsoft-centric enterprise ecosystems seeking single-pane integration with Power BI and Fabric. |
@@ -61,13 +63,13 @@ The following table compares leading SaaS and fully managed cloud data warehouse
 
 ---
 
-## Open-Source GitHub Projects
+## 🔓 Open-Source GitHub Projects
 
-Curated open-source analytical databases, Massively Parallel Processing (MPP) engines, lakehouse table formats, and vectorized query runtimes.
+Curated open-source analytical databases, Massively Parallel Processing (MPP) engines, lakehouse table formats, and vectorized query runtimes. 🛠️
 
-Repositories are sorted in descending order by **GitHub Star Count**. Every badge links directly to that repository's GitHub Stargazers page.
+Repositories are sorted in descending order by **GitHub Star Count**. Every badge links directly to that repository's GitHub Stargazers page. ⭐
 
-| Repository | GitHub Stars Badge | License | Language / Stack | Core Architectural Focus | Best For |
+| 📦 Repository | ⭐ Stargazers Badge | 📄 License | 💻 Language / Stack | ⚙️ Core Architectural Focus | 🎯 Best For |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **[ClickHouse](https://github.com/ClickHouse/ClickHouse)** | [![Stars](https://img.shields.io/github/stars/ClickHouse/ClickHouse?style=social&color=white)](https://github.com/ClickHouse/ClickHouse/stargazers) | Apache-2.0 | C++ | Column-oriented DBMS utilizing MergeTree engines and vectorized execution; extreme single-table aggregation speed. | Real-time observability, event streams, clickstream data, and sub-second analytical reporting. |
 | **[DuckDB](https://github.com/duckdb/duckdb)** | [![Stars](https://img.shields.io/github/stars/duckdb/duckdb?style=social&color=white)](https://github.com/duckdb/duckdb/stargazers) | MIT | C++, C | In-process vectorized columnar SQL OLAP database (the "SQLite for Analytics"); zero external dependencies, direct Parquet/Iceberg querying. | Local analytics, data science pipelines, client-side Python/R analytical applications, and embedded serverless ETL. |
@@ -90,41 +92,58 @@ Repositories are sorted in descending order by **GitHub Star Count**. Every badg
 
 ---
 
-## Key Architectural Trade-offs
+## ⚖️ Key Architectural Trade-offs
 
-1. **Fully Managed SaaS vs. Self-Hosted MPP Engines**
+1. **Fully Managed SaaS vs. Self-Hosted MPP Engines** 🏢 vs 🔓
    - **Snowflake, BigQuery, and Databricks SQL** eliminate operational overhead with multi-cluster isolation and autoscaling, but ongoing cloud compute consumption can scale significantly with unoptimized queries.
    - **ClickHouse, StarRocks, and Apache Doris** offer 5x–10x hardware efficiency and predictable fixed compute costs, but require dedicated site reliability engineering (SRE) for cluster scaling, sharding, and backup replication.
 
-2. **Serverless On-Demand vs. Decoupled Compute Clusters**
+2. **Serverless On-Demand vs. Decoupled Compute Clusters** ⚡ vs 🖥️
    - **Google BigQuery** processes queries serverlessly without requiring compute provisioning; pricing is driven by data scanned ($6.25/TB) or flat slot capacity.
    - **Snowflake & Firebolt** isolate virtual compute clusters from cloud object storage, ensuring independent workload isolation where compute shuts down when idle.
 
-3. **Pure-Play Query Engines vs. Storage-Engine OLAP Databases**
+3. **Pure-Play Query Engines vs. Storage-Engine OLAP Databases** 🔍 vs 💾
    - **Trino and Presto** store zero data, federating SQL queries across Iceberg, S3, PostgreSQL, and Snowflake.
    - **ClickHouse, Druid, and Pinot** bundle custom indexing and storage layouts (MergeTree, Star-Tree indexes) optimized for extreme sub-second point lookups and streaming aggregations.
 
-4. **Lakehouse Table Formats (Iceberg vs. Delta vs. Hudi vs. Paimon)**
+4. **Lakehouse Table Formats (Iceberg vs. Delta vs. Hudi vs. Paimon)** 🧊 vs 🌊
    - **Apache Iceberg** is the vendor-neutral standard for open lakehouses, supported natively by Snowflake, BigQuery, StarRocks, and Trino.
    - **Delta Lake** provides deep optimization within Databricks and Apache Spark ecosystems.
    - **Apache Hudi and Paimon** specialize in LSM-tree upserts, streaming change data capture (CDC), and continuous ingestion workflows.
 
 ---
 
-## How to Contribute
+## 🤝 How to Contribute
 
-We welcome community contributions! To add a new platform or update information:
+We welcome community contributions! 🌟 To add a new platform or update information:
 
-1. Fork this repository.
-2. Update `README.md` with factual architecture descriptions, transparent pricing benchmarks, or open-source repositories.
-3. For open-source tools, include the GitHub stars badge formatted as:
+1. 🍴 Fork this repository.
+2. 📝 Update `README.md` with factual architecture descriptions, transparent pricing benchmarks, or open-source repositories.
+3. 🏷️ For open-source tools, include the GitHub stars badge formatted as:
    `[![Stars](https://img.shields.io/github/stars/{owner}/{repo}?style=social&color=white)](https://github.com/{owner}/{repo}/stargazers)`
-4. Ensure entries are placed in the appropriate sorted table.
-5. Submit a descriptive Pull Request (PR).
+4. 🔢 Ensure entries are placed in the appropriate sorted table.
+5. 🚀 Submit a descriptive Pull Request (PR).
 
 ---
 
-## License & Disclaimer
+## 💖 Support
 
-- Distributed under the [MIT License](LICENSE).
-- **Disclaimer**: Company valuations, market capitalization figures, and list pricing tiers are collected from public filings, vendor pricing pages, and verified financial reporting as of October 2026. Consult vendor documentation for real-time workload-specific quote modeling.
+Thank you so much for exploring and using this repository! 🙌 If you found this curated guide helpful in navigating the cloud data warehouse and lakehouse landscape:
+
+- ⭐ **Star this repository** to help others discover it!
+- 🍴 **Fork it** and contribute your insights or architectures!
+- 📢 **Share it** with fellow data architects, data engineers, and analytics leaders!
+- ☕ **Support the maintainer**: Buy a coffee or become a backer on the [Sponsor Dashboard](https://github.com/sponoors/ishandutta2007). Your support helps keep these benchmarks and architectural guides up to date!
+
+---
+
+## 📊 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Cloud-Data-Warehouse-Architecture&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Cloud-Data-Warehouse-Architecture&type=date&legend=top-left)
+
+---
+
+## 📜 License & Disclaimer
+
+- ⚖️ Distributed under the [MIT License](LICENSE).
+- 📌 **Disclaimer**: Company valuations, market capitalization figures, and list pricing tiers are collected from public filings, vendor pricing pages, and verified financial reporting as of October 2026. Consult vendor documentation for real-time workload-specific quote modeling.

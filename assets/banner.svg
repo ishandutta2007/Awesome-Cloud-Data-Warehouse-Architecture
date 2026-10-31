@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0e172a" />
+      <stop offset="100%" stop-color="#060913" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="cyan-blue-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="pill-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+
+    <radialGradient id="orb-glow-1" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="orb-glow-2" cx="80%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.3" />
+    </pattern>
+
+    <!-- Card Filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+
+    <style>
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-12px) rotate(1deg); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.7; transform: scale(1.08); }
+      }
+      @keyframes dashMove {
+        to { stroke-dashoffset: -100; }
+      }
+      @keyframes nodePulse {
+        0%, 100% { r: 4; opacity: 0.5; }
+        50% { r: 6.5; opacity: 1; }
+      }
+
+      .floating-node-1 { animation: floatSlow 7s ease-in-out infinite; }
+      .floating-node-2 { animation: floatSlow 9s ease-in-out 1.5s infinite; }
+      .pulse-glow-layer { animation: pulseGlow 6s ease-in-out infinite alternate; }
+      .data-flow-line {
+        stroke-dasharray: 8 6;
+        animation: dashMove 5s linear infinite;
+      }
+      .node-pulse-1 { animation: nodePulse 3s ease-in-out infinite; }
+      .node-pulse-2 { animation: nodePulse 4s ease-in-out 1s infinite; }
+      .node-pulse-3 { animation: nodePulse 3.5s ease-in-out 2s infinite; }
+
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 44px;
+        letter-spacing: -0.5px;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        fill: #94a3b8;
+      }
+      .pill-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #e2e8f0;
+      }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="420" fill="url(#bg-grad)" rx="16" />
+
+  <!-- Background Animated Glowing Orbs -->
+  <circle cx="250" cy="140" r="320" fill="url(#orb-glow-1)" class="pulse-glow-layer" />
+  <circle cx="950" cy="280" r="300" fill="url(#orb-glow-2)" class="pulse-glow-layer" />
+
+  <!-- Tech Grid Background Pattern -->
+  <rect width="1200" height="420" fill="url(#grid-pattern)" rx="16" />
+
+  <!-- Dynamic Animated Architectural Circuit / Data Flow Lines in Background -->
+  <g opacity="0.45">
+    <path d="M 80 100 Q 240 60, 400 120 T 700 80 T 1120 110" fill="none" stroke="#38bdf8" stroke-width="2" class="data-flow-line" />
+    <path d="M 100 350 Q 320 380, 580 320 T 920 360 T 1100 330" fill="none" stroke="#818cf8" stroke-width="2" class="data-flow-line" style="animation-direction: reverse; animation-duration: 7s;" />
+    <path d="M 180 380 L 180 40 M 1020 390 L 1020 50" fill="none" stroke="#475569" stroke-width="1" stroke-dasharray="4 8" opacity="0.4" />
+  </g>
+
+  <!-- Dynamic Ambient Nodes (Under/Sides) -->
+  <circle cx="400" cy="120" fill="#38bdf8" class="node-pulse-1" />
+  <circle cx="700" cy="80" fill="#c084fc" class="node-pulse-2" />
+  <circle cx="580" cy="320" fill="#818cf8" class="node-pulse-3" />
+  <circle cx="920" cy="360" fill="#38bdf8" class="node-pulse-1" />
+
+  <!-- FOREGROUND: Central Hero Content (Strictly In Front) -->
+  <g transform="translate(600, 150)" text-anchor="middle">
+    <!-- Super-title Tag -->
+    <rect x="-185" y="-62" width="370" height="28" rx="14" fill="#1e293b" stroke="#3b82f6" stroke-width="1.2" opacity="0.95" />
+    <text x="0" y="-44" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="11.5" fill="#38bdf8" letter-spacing="1.2">
+      ⚡ ENTERPRISE DATA ARCHITECTURE &amp; OLAP ENGINES
+    </text>
+
+    <!-- Main Title -->
+    <text x="0" y="5" class="title-text" fill="url(#cyan-blue-grad)" filter="url(#shadow)">
+      Awesome Cloud Data Warehouse
+    </text>
+    <text x="0" y="48" class="title-text" fill="#ffffff" filter="url(#shadow)">
+      Architecture
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="92" class="subtitle-text">
+      Curated Deep-Dive: Separation of Storage &amp; Compute • MPP • Lakehouse • Vectorized OLAP
+    </text>
+  </g>
+
+  <!-- Interactive / Floating Architecture Badges (Lower Half) -->
+  <g class="floating-node-1" transform="translate(140, 290)">
+    <rect width="180" height="52" rx="12" fill="url(#pill-grad)" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.8" filter="url(#shadow)" />
+    <circle cx="28" cy="26" r="10" fill="#0284c7" fill-opacity="0.4" />
+    <text x="28" y="30" text-anchor="middle" font-size="13">☁️</text>
+    <text x="50" y="24" class="pill-text" font-size="13.5">Cloud Native</text>
+    <text x="50" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">Decoupled Compute</text>
+  </g>
+
+  <g class="floating-node-2" transform="translate(360, 290)">
+    <rect width="200" height="52" rx="12" fill="url(#pill-grad)" stroke="#818cf8" stroke-width="1.5" stroke-opacity="0.8" filter="url(#shadow)" />
+    <circle cx="28" cy="26" r="10" fill="#4f46e5" fill-opacity="0.4" />
+    <text x="28" y="30" text-anchor="middle" font-size="13">⚡</text>
+    <text x="50" y="24" class="pill-text" font-size="13.5">MPP &amp; Lakehouse</text>
+    <text x="50" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">Iceberg • Delta • Doris</text>
+  </g>
+
+  <g class="floating-node-1" transform="translate(600, 290)">
+    <rect width="210" height="52" rx="12" fill="url(#pill-grad)" stroke="#a855f7" stroke-width="1.5" stroke-opacity="0.8" filter="url(#shadow)" />
+    <circle cx="28" cy="26" r="10" fill="#9333ea" fill-opacity="0.4" />
+    <text x="28" y="30" text-anchor="middle" font-size="13">🚀</text>
+    <text x="50" y="24" class="pill-text" font-size="13.5">Sub-Second OLAP</text>
+    <text x="50" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">ClickHouse • StarRocks</text>
+  </g>
+
+  <g class="floating-node-2" transform="translate(850, 290)">
+    <rect width="210" height="52" rx="12" fill="url(#pill-grad)" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.8" filter="url(#shadow)" />
+    <circle cx="28" cy="26" r="10" fill="#0284c7" fill-opacity="0.4" />
+    <text x="28" y="30" text-anchor="middle" font-size="13">📊</text>
+    <text x="50" y="24" class="pill-text" font-size="13.5">Market &amp; Pricing</text>
+    <text x="50" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">Tier Breakdown &amp; TCO</text>
+  </g>
+
+  <!-- Subtle Bottom Border Accent -->
+  <rect x="0" y="416" width="1200" height="4" fill="url(#cyan-blue-grad)" />
+</svg>
